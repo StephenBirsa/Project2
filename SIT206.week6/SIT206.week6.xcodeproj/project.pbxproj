@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BB173E151EA8210100EB88A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173E141EA8210100EB88A4 /* AppDelegate.swift */; };
-		BB173E171EA8210100EB88A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173E161EA8210100EB88A4 /* ViewController.swift */; };
 		BB173E1A1EA8210100EB88A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB173E181EA8210100EB88A4 /* Main.storyboard */; };
 		BB173E1C1EA8210100EB88A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB173E1B1EA8210100EB88A4 /* Assets.xcassets */; };
 		BB173E1F1EA8210100EB88A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB173E1D1EA8210100EB88A4 /* LaunchScreen.storyboard */; };
 		BB173E2A1EA8210100EB88A4 /* SIT206_week6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173E291EA8210100EB88A4 /* SIT206_week6Tests.swift */; };
 		BB173E351EA8210100EB88A4 /* SIT206_week6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173E341EA8210100EB88A4 /* SIT206_week6UITests.swift */; };
+		BB173E431EA826EB00EB88A4 /* TblViewControllerTripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173E421EA826EB00EB88A4 /* TblViewControllerTripInfo.swift */; };
+		BB173E451EA8271200EB88A4 /* TblViewControllerTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173E441EA8271200EB88A4 /* TblViewControllerTrips.swift */; };
+		BB173E471EA827F400EB88A4 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173E461EA827F400EB88A4 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		BB173E111EA8210100EB88A4 /* SIT206.week6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIT206.week6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB173E141EA8210100EB88A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB173E161EA8210100EB88A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB173E191EA8210100EB88A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB173E1B1EA8210100EB88A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB173E1E1EA8210100EB88A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		BB173E301EA8210100EB88A4 /* SIT206.week6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIT206.week6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB173E341EA8210100EB88A4 /* SIT206_week6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIT206_week6UITests.swift; sourceTree = "<group>"; };
 		BB173E361EA8210100EB88A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB173E421EA826EB00EB88A4 /* TblViewControllerTripInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTripInfo.swift; sourceTree = "<group>"; };
+		BB173E441EA8271200EB88A4 /* TblViewControllerTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTrips.swift; sourceTree = "<group>"; };
+		BB173E461EA827F400EB88A4 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				BB173E141EA8210100EB88A4 /* AppDelegate.swift */,
-				BB173E161EA8210100EB88A4 /* ViewController.swift */,
 				BB173E181EA8210100EB88A4 /* Main.storyboard */,
 				BB173E1B1EA8210100EB88A4 /* Assets.xcassets */,
 				BB173E1D1EA8210100EB88A4 /* LaunchScreen.storyboard */,
 				BB173E201EA8210100EB88A4 /* Info.plist */,
+				BB173E421EA826EB00EB88A4 /* TblViewControllerTripInfo.swift */,
+				BB173E441EA8271200EB88A4 /* TblViewControllerTrips.swift */,
+				BB173E461EA827F400EB88A4 /* Trip.swift */,
 			);
 			path = SIT206.week6;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB173E171EA8210100EB88A4 /* ViewController.swift in Sources */,
+				BB173E471EA827F400EB88A4 /* Trip.swift in Sources */,
+				BB173E451EA8271200EB88A4 /* TblViewControllerTrips.swift in Sources */,
+				BB173E431EA826EB00EB88A4 /* TblViewControllerTripInfo.swift in Sources */,
 				BB173E151EA8210100EB88A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
