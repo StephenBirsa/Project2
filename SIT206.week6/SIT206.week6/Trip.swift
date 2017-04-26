@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Trip: NSObject {
+class Trip {
     var tripDate:Date
     var tripDuration:Int
     var tripDestination:String
@@ -21,7 +21,7 @@ class Trip: NSObject {
         self.destinationImage = img
     }
 }
-class Utilities: NSObject {
+class Utilities {
     static var dateFormatter = DateFormatter()
     static var trips:[Trip] = []
     static func loadTrips() {

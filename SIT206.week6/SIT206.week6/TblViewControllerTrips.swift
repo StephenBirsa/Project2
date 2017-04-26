@@ -29,6 +29,10 @@ class TblViewControllerTrips: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //@IBAction func unWindSegue(_ sender: UIStoryboardSegue) {
+        //self.tableView.reloadData()
+    //}
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,6 +47,9 @@ class TblViewControllerTrips: UITableViewController {
         return Utilities.trips.count
     }
 
+    @IBAction func unWindSegue(segue:UIStoryboardSegue) {
+        self.tableView.reloadData()
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
